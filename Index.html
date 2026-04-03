@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry 💔</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        background: linear-gradient(to right, #ffdde1, #ee9ca7);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        position: relative;
+        width: 320px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #yes {
+        background-color: #ff4d6d;
+        color: white;
+    }
+
+    #no {
+        background-color: gray;
+        color: white;
+        position: absolute;
+    }
+
+    #newText {
+        display: none;
+        font-size: 20px;
+        color: #ff4d6d;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- FIRST CONTENT -->
+    <div id="content">
+        <h2>I'm Really Sorry 😔</h2>
+        <p>Please forgive me 💖</p>
+
+        <button id="yes" onclick="showText()">Forgive Me</button>
+        <button id="no" onmouseover="moveButton()">No</button>
+    </div>
+
+    <!-- NEW TEXT -->
+    <div id="newText">
+        <p>jagadeesh im sorry kavali avoid em cheyatlee baa .<br/>
+             nak telusu text petti okka sec lo mayam ipothey ela untundhoo<br/>
+              monne gahh chupinchav 🙂 sorryy baa . sorry anedhi chinnadheyy <br/>
+              nak telusu baa kani inka nii istam im really sorry jagadeesh 🙂 sorry <br/>
+              okkavela nen rude gaa indhaka matladi unte . machaa text cheyaledhu online<br/>
+               loki raleee ante nuvu imp kadhu ani kadhu baa naku ala gurthu vasthuney <br/>
+               untav kani msg cheyadaniki avvadhu 🙂 monna kuda same elane iyyindhi <br/>
+               movie chusinnapudu atleast text avvaledha ani avvaledhuu baa ayithey nen<br/>
+                cheyanaa .sorry baa emaina rude gaa behave chesi unte im really sorry.i love youu baa 🙂<br/>
+            nuvu nannu avoid chesina natho ela unna i still love you 🙂</p>
+    </div>
+
+</div>
+
+<script>
+function showText() {
+    document.getElementById("content").style.display = "none";
+    document.getElementById("newText").style.display = "block";
+}
+
+function moveButton() {
+    var btn = document.getElementById("no");
+
+    var x = Math.random() * 250;
+    var y = Math.random() * 250;
+
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
